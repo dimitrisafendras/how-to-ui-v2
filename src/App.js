@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { PageLayout } from './pageLayout'
+
+
+const Main = ({ className, children }) => <div className={`Main ${className}`}>Main{children}</div>
+
+const MainLayout = ({ children }) => <div className='MainLayout'>{children}</div>
+const Card = () => <div className='Card' />
+
+const Footer = ({ className }) => <div className={`Footer ${className}`}>Footer</div>
+
+
+const Header = ({ className }) =>
+  <div className={`Header ${className}`}>
+    Header
+  </div>
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PageLayout
+      HeaderComponent={Header}
+      MainComponent={({ className }) =>
+        <Main className={className}>
+          <MainLayout>
+            <Card />
+            <Card />
+            <Card />
+          </MainLayout>
+        </Main>
+      }
+      FooterComponent={Footer}
+    />
+
   );
 }
 
