@@ -1,5 +1,5 @@
 import './Card.css'
 
-export const Card = () => {
-    return <div className={'Card'} />
+export const Card = ({className}) => {
+    return <div className={`Card ${className}`} />
 }

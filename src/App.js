@@ -1,6 +1,6 @@
 import {Footer, Header, Main, PageLayout} from './components';
 
-function App() {
+const App = () => {
 	return (
 		<PageLayout
 			HeaderComponent={Header}
