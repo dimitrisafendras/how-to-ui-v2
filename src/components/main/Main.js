@@ -1,5 +1,5 @@
 import './Main.css';
-import {Card} from '../card';
+import {Card} from './components/card';
 
 export const Main = ({ className }) =>
 	<div className={`Main ${className}`}>
