@@ -1,4 +1,4 @@
-.Main {
+.Main{
     background-color: green;
 
     display: flex;
@@ -21,4 +21,25 @@
      "bigCard bigCard smallCard1 smallCard2"
      "bigCard bigCard smallCard3 smallCard4";
 }
+
+.Main-layout__bigCard{
+    grid-area: bigCard;
+}
+
+.Main-layout__smallCard1{
+    grid-area: smallCard1;
+}
+
+.Main-layout__smallCard2{
+    grid-area: smallCard2;
+}
+
+.Main-layout__smallCard3{
+    grid-area: smallCard3;
+}
+
+.Main-layout__smallCard4{
+    grid-area: smallCard4;
+}
+
 

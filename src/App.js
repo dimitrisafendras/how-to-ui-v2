@@ -1,4 +1,4 @@
-import {Footer, Header, Main, PageLayout} from './components';
+import { Footer, Header, Main, PageLayout } from './components';
 
 const App = () => {
 	return (
