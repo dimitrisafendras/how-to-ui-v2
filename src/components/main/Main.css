@@ -1,4 +1,6 @@
 .Main {
+    background-color: green;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,10 +9,16 @@
 .Main__layout{
     background-color: aqua;
 
-    height: 500px;
-    width: 500px;
+    min-height: 500px;
+    width: 100%;
+    max-width: 1500px;
 
     display: grid;
     grid-gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+     "bigCard bigCard smallCard1 smallCard2"
+     "bigCard bigCard smallCard3 smallCard4";
 }
 

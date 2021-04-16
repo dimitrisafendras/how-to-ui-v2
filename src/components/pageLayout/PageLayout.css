@@ -1,13 +1,9 @@
 .PageLayout{
-
-    transition: all;
-
     min-height: 100vh;
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 56px 1fr 80px;
-
     grid-template-areas: 
      "header"
      "main" 
@@ -16,17 +12,14 @@
 
 .PageLayout__header {
     grid-area: header;
-    background-color: red;
 }
 
 .PageLayout__main {
     grid-area: main;
-    background-color: green;
 }
 
 .PageLayout__footer {
     grid-area: footer;
-    background-color: blue;
 }
 
 @media (max-width:400px) {
