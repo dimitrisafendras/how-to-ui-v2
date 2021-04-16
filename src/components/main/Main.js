@@ -3,7 +3,6 @@ import { Card } from './components';
 
 export const Main = ({ className }) =>
 	<div className={`Main ${className}`}>
-		Main
 		<div className="Main__layout">
 			{/*Discuss if instead spancol/row 2*/}
 			<Card className='Main-layout__bigCard' bigCard/>

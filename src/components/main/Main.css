@@ -1,4 +1,5 @@
 .Main{
+    padding: 16px;
     background-color: green;
 
     display: flex;
