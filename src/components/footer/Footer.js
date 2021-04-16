@@ -1,3 +1,5 @@
 import './Footer.css';
 
-export const Footer = ({ className }) => <div className={`Footer ${className}`}>Footer</div>
+export const Footer = ({ className }) => (
+  <div className={`Footer ${className}`}>Footer</div>
+);

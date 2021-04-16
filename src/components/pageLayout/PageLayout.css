@@ -1,23 +1,23 @@
-.PageLayout{
-    min-height: 100vh;
+.PageLayout {
+  min-height: 100vh;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 56px 1fr 80px;
-    grid-template-areas: 
-     "header"
-     "main" 
-     "footer";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 1fr 80px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 .PageLayout__header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .PageLayout__main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .PageLayout__footer {
-    grid-area: footer;
+  grid-area: footer;
 }
