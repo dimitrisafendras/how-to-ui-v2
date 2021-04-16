@@ -21,23 +21,23 @@
      "bigCard bigCard smallCard3 smallCard4";
 }
 
-.Main-layout__bigCard{
+.Main__bigCard{
     grid-area: bigCard;
 }
 
-.Main-layout__smallCard1{
+.Main__smallCard1{
     grid-area: smallCard1;
 }
 
-.Main-layout__smallCard2{
+.Main__smallCard2{
     grid-area: smallCard2;
 }
 
-.Main-layout__smallCard3{
+.Main__smallCard3{
     grid-area: smallCard3;
 }
 
-.Main-layout__smallCard4{
+.Main__smallCard4{
     grid-area: smallCard4;
 }
 
