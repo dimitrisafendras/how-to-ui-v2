@@ -1,9 +1,10 @@
-import { Footer, Header, Main, PageLayout } from './components';
+import { Footer, Header, Main, PageLayout, Sidebar } from './components';
 
 const App = () => (
   <PageLayout
     HeaderComponent={Header}
     MainComponent={Main}
+    SidebarComponent={Sidebar}
     FooterComponent={Footer}
   />
 );

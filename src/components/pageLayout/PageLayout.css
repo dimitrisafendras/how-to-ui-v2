@@ -3,10 +3,11 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 56px 1fr 80px;
+  grid-template-rows: 56px 1fr 40px 80px;
   grid-template-areas:
     "header"
     "main"
+    "sidebar"
     "footer";
 }
 
@@ -16,6 +17,10 @@
 
 .PageLayout__main {
   grid-area: main;
+}
+
+.PageLayout__sidebar {
+  grid-area: sidebar;
 }
 
 .PageLayout__footer {
