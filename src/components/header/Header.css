@@ -1,7 +1,30 @@
 .Header {
-  background-color: red;
+  background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 32px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.logo {
+  width: 138px;
+  height: 33px;
+}
+
+.leftSection {
+  display: none;
+}
+
+.rightSection {
+  display: none;
+}
+
+a {
+  color: #494949;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
 }
