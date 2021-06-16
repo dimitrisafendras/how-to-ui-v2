@@ -2,20 +2,17 @@
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
 }
 
-.logo {
+.Header__logo {
   width: 138px;
   height: 33px;
 }
 
-.leftSection {
-  display: none;
-}
-
-.rightSection {
+.Header__leftSection,
+.Header__rightSection {
   display: none;
 }
 
@@ -26,5 +23,26 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+/* dont we want @media (min-width? Because we write mobile first?
+That way we say outside of media queries our styles and as widths
+getting bigger, we edit classes? I think media-max-width is the oposite?
+*/
+@media (min-width: 768px) {
+  .Header__logo {
+    width: auto;
+    height: auto;
+  }
+  .Header__rightSection,
+  .Header__leftSection {
+    display: unset;
+  }
+  .Header {
+    padding: 26px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Header {
+    padding: 26px 80px;
+  }
 }

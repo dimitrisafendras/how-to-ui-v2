@@ -3,7 +3,7 @@
 
   display: grid;
   grid-template-columns: 48px 1fr 48px;
-  grid-template-rows: 56px 1fr 40px 80px;
+  grid-template-rows: auto 1fr 40px 80px;
   grid-template-areas:
     'sidebar header footer'
     'sidebar main footer'
