@@ -6,43 +6,20 @@
   padding: 10px;
 }
 
-.Header__logo {
-  width: 138px;
-  height: 33px;
-}
-
-.Header__leftSection,
-.Header__rightSection {
-  display: none;
-}
-
 a {
+  display: none;
   color: #494949;
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* dont we want @media (min-width? Because we write mobile first?
-That way we say outside of media queries our styles and as widths
-getting bigger, we edit classes? I think media-max-width is the oposite?
-*/
-@media (min-width: 768px) {
-  .Header__logo {
-    width: auto;
-    height: auto;
+@media (min-width: 400px) {
+  .Header__burger {
+    display: none;
   }
-  .Header__rightSection,
-  .Header__leftSection {
-    display: unset;
-  }
-  .Header {
-    padding: 26px 40px;
-  }
-}
 
-@media (min-width: 1024px) {
-  .Header {
-    padding: 26px 80px;
+  a {
+    display: unset;
   }
 }
